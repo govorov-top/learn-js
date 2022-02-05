@@ -1,6 +1,6 @@
 // Область видимости - scope
 
-let isValid = false;
+const isValid = false;
 const str = 'Hello';
 
 function isString(str) {
