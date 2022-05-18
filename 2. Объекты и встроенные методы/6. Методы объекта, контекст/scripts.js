@@ -10,15 +10,16 @@ const user = {
     ],
     isJob: false,
     updateAge(){
-        this.age++;
+        ++this.age;
     },
     updateName(name){
         this.name = name;
     }
 };
+console.log(user);
 
 // Работа с методами
 user.updateAge();
-console.log(user.age);
+console.log(user);
 user.updateName('Оля');
-console.log(user.name);
+console.log(user);

@@ -10,8 +10,6 @@ console.log(x, typeof x);
 x = false;
 console.log(x, typeof x);
 // String - typeof = string
-x = 'Hi';
-x = "Hi";
 x = `Hi`;
 console.log(x, typeof x);
 //Symbol

@@ -11,5 +11,4 @@ console.log(res);
 function sumNoReturn(a,b) {
     console.log(a + b);
 }
-
 res = sumNoReturn(5,9);

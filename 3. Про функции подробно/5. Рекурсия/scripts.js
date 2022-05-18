@@ -6,7 +6,6 @@ function factorial(num) {
     if (num === 0) return 1;
     return num * factorial(num - 1);
 }
-
 console.log(factorial(30)); // 30 * 29 * 28 ...
 
 // function принимает символ и возвращает его в 5 экземплярах

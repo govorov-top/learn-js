@@ -5,8 +5,7 @@
 
 // Пример 1
 function hi(name) {
-    const hiName = () => console.log('Hi, ', name);
-    return hiName;
+    return () => console.log('Hi', name);
 }
 const hiName = hi('Roma');
 hiName();

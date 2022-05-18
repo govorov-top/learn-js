@@ -12,4 +12,4 @@ try {
     console.error(error);
 }
 
-console.log('Всё гуд!');
+console.log('Продолжаем работу кода при любых исходах!');

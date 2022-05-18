@@ -13,6 +13,7 @@ const sum2 = function (a,b) {
 console.log(sum2(5,7));
 
 // IIFE (Immediately-invoked function expression)
+// Выражение функции, вызываемой немедленно
 (function(a,b){
     return a + b;
 } (5, 4));
