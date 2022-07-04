@@ -1,4 +1,5 @@
-// Дана коллекция players. Найдите в ней объект с информацией об игроке с фамилией Messi и сохраните в новую переменную messi.
+// Дана коллекция players.
+// Создайте новую переменную jsonPlayers и сохраните в ней оригинальную коллекцию в формате JSON.
 const players = [
     {
         id: 1,
@@ -25,5 +26,5 @@ const players = [
         club: 'Barcelona',
     },
 ];
-const messi = players.find(player => player.surname === 'Messi');
-console.log(messi);
+const jsonPlayers = JSON.stringify(players);
+console.log(jsonPlayers);

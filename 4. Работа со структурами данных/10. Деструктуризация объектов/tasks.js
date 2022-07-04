@@ -1,29 +1,28 @@
-// Дана коллекция players. Найдите в ней объект с информацией об игроке с фамилией Messi и сохраните в новую переменную messi.
-const players = [
-    {
-        id: 1,
-        name: 'Andres',
-        surname: 'Iniesta',
-        club: 'Vissel Cobe',
+// Дан объект link.
+// Используя деструктуризацию объекта, создайте новые переменные со значениями 'blank', 'link', 'anchor', 'Click me'.
+// Имена переменных используйте согласно ключам (где необходимо, используйте переименование, создав переменную с именем renamed).
+const link = {
+    href: '#',
+    title: 'simple link',
+    target: 'blank',
+    className: 'link',
+    id: null,
+    children: {
+        span: {
+            content: 'Click me',
+            className: 'anchor',
+        },
     },
-    {
-        id: 2,
-        name: 'Eden',
-        surname: 'Hazard',
-        club: 'Real Madrid',
-    },
-    {
-        id: 3,
-        name: 'Mo',
-        surname: 'Salah',
-        club: 'Liverpool',
-    },
-    {
-        id: 4,
-        name: 'Lionel',
-        surname: 'Messi',
-        club: 'Barcelona',
-    },
-];
-const messi = players.find(player => player.surname === 'Messi');
-console.log(messi);
+}
+const {
+    target,
+    className,
+    children: {
+        span: {
+            content,
+            className: renamed
+        }
+    }
+} = link;
+console.log(target, className,);
+console.log(content,renamed);

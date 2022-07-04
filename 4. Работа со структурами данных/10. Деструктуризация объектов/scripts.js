@@ -1,21 +1,6 @@
 /*
  Деструктуризация объектов
  */
-const strings = ['Roma', 'Anna', 'Olga', 'Evgeny', 'Oleg'];
-const [
-    // Если нет, добавляем свои данные
-    name1 = 'Роман',
-    name2 = 'Анна',
-    ,
-    ...other // []
-] = strings;
-console.log(name1, name2, other);
-
-
-const numbers = [5,[1,2],3,4,6,7,8,9,10];
-const [a,b,c,,,...otherNumbs] = numbers;
-console.log(a,b,c,otherNumbs);
-// Работа с объектами
 const developers = [
     {
         id: 1,
@@ -38,3 +23,35 @@ const developers = [
         skills: ['HTML', 'CSS', 'Git', 'JavaScript', 'TypeScript', 'React']
     },
 ];
+const developer = {
+    id: 75,
+    salary: 2500,
+    fullName: 'Ivan Ivanov',
+    skills: ['HTML', 'CSS', 'Git', 'Gulp', 'Pug'],
+    area: 'frontend',
+    languages: {
+        english: 'B2',
+        spanish: 'native',
+    }
+};
+const area = 'backend';
+const {
+    area: areaDev = 'fullstack',
+    id,
+    skills: [
+        , , git
+    ],
+    languages: {
+        spanish
+    },
+    ...other} = developer;
+console.log(`area: ${area}`,`areaObj: ${areaDev}`);
+console.log(id);
+console.log(spanish);
+console.log(git);
+console.log(other);
+
+// Деструктуризация в существующие переменные
+let fullName,salary;
+({fullName,salary} = developer);
+console.log(fullName,salary);
